@@ -7,7 +7,7 @@ const initialState = {
 };
 
 const flyingFormSlice = createSlice({
-  name: "flyingForm",
+  name: "FlyingModal",
   initialState,
   reducers: {
     showModal: (

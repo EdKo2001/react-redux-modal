@@ -6,11 +6,11 @@ import { ThunkDispatch } from "redux-thunk";
 import logger from "redux-logger";
 import thunk from "redux-thunk";
 
-import flyingFormReducer from "../features/flyingForm/flyingFormSlice";
+import flyingModalReducer from "../features/flyingModal/flyingModalSlice";
 
 const store = configureStore({
   reducer: {
-    flyingForm: flyingFormReducer,
+    flyingModal: flyingModalReducer,
   },
   middleware: [thunk, logger],
 });

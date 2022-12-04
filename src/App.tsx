@@ -1,17 +1,15 @@
-import { Button } from "antd";
-
 import { useDispatch } from "react-redux";
 
-import { showModal } from "./features/flyingForm/flyingFormSlice";
+import { showModal } from "./features/flyingModal/flyingModalSlice";
 
 const App = () => {
   const dispatch = useDispatch();
 
   return (
     <div className="App">
-      <Button
-        size="large"
+      <button
         onClick={() => dispatch(showModal({ modalType: "CREATE_POST" }))}
+        className="button"
         style={{
           background: "#f6ffed",
           border: "1px solid #b7eb8f",
@@ -19,14 +17,13 @@ const App = () => {
         }}
       >
         Show Create Post Modal
-      </Button>
-      <Button
-        size="large"
-        type="primary"
+      </button>
+      <button
         onClick={() => dispatch(showModal({ modalType: "EDIT_POST" }))}
+        className="button"
       >
         Show Edit Post Modal
-      </Button>
+      </button>
     </div>
   );
 };

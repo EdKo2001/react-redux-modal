@@ -7,7 +7,9 @@ interface ModalFactorProps {
 }
 
 const ModalFactory: FC<ModalFactorProps> = ({ modalComponents }) => {
-  const activeModals = useAppSelector((state) => state.flyingForm.activeModals);
+  const activeModals = useAppSelector(
+    (state) => state.flyingModal.activeModals
+  );
 
   const renderModalComponent = ({ modalType, level, modalProps }: any) => {
     if (!modalComponents || !modalComponents[modalType]) {

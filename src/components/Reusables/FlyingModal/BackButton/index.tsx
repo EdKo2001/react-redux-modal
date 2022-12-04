@@ -8,7 +8,9 @@ interface BackButtonProps {
 }
 
 const BackButton: FC<BackButtonProps> = ({ modalType, handleCancel }) => {
-  const activeModals = useAppSelector((state) => state.flyingForm.activeModals);
+  const activeModals = useAppSelector(
+    (state) => state.flyingModal.activeModals
+  );
 
   return activeModals.length > 1 &&
     activeModals.length - 1 ===

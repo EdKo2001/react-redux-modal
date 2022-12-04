@@ -4,7 +4,7 @@ import BackButton from "../BackButton";
 
 import { useAppDispatch } from "../../../../app/hooks";
 
-import { hideModal } from "../../../../features/flyingForm/flyingFormSlice";
+import { hideModal } from "../../../../features/flyingModal/flyingModalSlice";
 
 interface FlyingFormHeaderProps {
   modalType: string;
