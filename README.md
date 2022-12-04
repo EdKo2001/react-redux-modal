@@ -12,9 +12,9 @@ The main reason that prompted me to create is that calling Modal from any compon
 
 **Example**:
 
-    <Button onClick={() => dispatch(showModal({ modalType: "CREATE_POST" }))}>
+    <button onClick={() => dispatch(showModal({ modalType: "CREATE_POST" }))}>
       Show Create Post Modal
-    </Button>
+    </button>
 
 ## Available Scripts
 
