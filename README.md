@@ -1,3 +1,8 @@
+<h1 align="center">REACT REDUX MODAL</h1>
+
+<p align="center">
+    <img align="center" src="https://user-images.githubusercontent.com/53624093/207137515-b19cc418-01b6-4a89-987b-2653ef94f76f.gif">
+</p>
 
 ## Stack
 
